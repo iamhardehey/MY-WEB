@@ -258,3 +258,71 @@ a:hover {
     align-items: center;
     justify-content: flex-start;
 }
+html {
+    scroll-behavior: smooth;
+}
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1abc9c;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+.profile-pic {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 8px 0;
+    }
+}
